@@ -420,3 +420,8 @@
 [2024-06-21 18:31:26,484 INFO] agent_likelihood:-4.889767169952393, augmented_likelihood: -4.9079155921936035,   prior_likelihood:-4.9079155921936035 
 [2024-06-21 18:31:26,508 INFO] Step 80;Fraction valid SMILES: 100.0
 [2024-06-21 18:31:26,508 INFO] samples:
+[2024-06-21 18:54:24,637 INFO] Step ------ 100;
+[2024-06-21 18:54:24,639 INFO] loss :::  0.018111901357769966,  score: 0.0, lr: (1e-05, 1e-05) 
+[2024-06-21 18:54:24,640 INFO] agent_likelihood:-5.617473125457764, augmented_likelihood: -5.643847465515137,   prior_likelihood:-5.643847465515137 
+[2024-06-21 18:54:24,663 INFO] Step 100;Fraction valid SMILES: 100.0
+[2024-06-21 18:54:24,663 INFO] samples:
