@@ -1,0 +1,45 @@
+[2024-06-21 15:44:50,596 INFO] Start training...
+[2024-06-21 15:44:50,599 INFO] cur device: cuda
+[2024-06-21 15:44:50,602 INFO] C(=O)C[C@@H]1N=C(c2ccc(Cl)cc2)c2c(sc(C)c2C)-n2c(C)nnc21.*c1cccc2c1C(=O)N(C1CCC(=O)NC1=O)C2=O
+[2024-06-21 15:44:50,602 INFO] Cc1sc2c(c1C)C(c1ccc(Cl)cc1)=N[C@@H](CC(=O)NCCCCCCCCNC(=O)COc1cccc3c1C(=O)N(C1CCC(=O)NC1=O)C3=O)c1nnc(C)n1-2
+[2024-06-21 15:44:52,714 INFO] Step ------ 0;
+[2024-06-21 15:44:52,714 INFO] loss :::  4.002797504654154e-05,  score: 0.0, lr: (1e-05, 1e-05) 
+[2024-06-21 15:44:52,714 INFO] agent_likelihood:-6.052278518676758, augmented_likelihood: -6.051779747009277,   prior_likelihood:-6.051779747009277 
+[2024-06-21 15:44:52,737 INFO] Step 0;Fraction valid SMILES: 100.0
+[2024-06-21 15:44:52,737 INFO] samples:
+[2024-06-21 15:44:52,825 INFO] Saving checkpoint checkpoints/PROTAC/Agent/dBET6/Model_Agent_on_PROTAC_zinc300000_protac3000_canonical_M_MW_step_0.pt
+[2024-06-21 15:45:29,624 INFO] Step ------ 20;
+[2024-06-21 15:45:29,626 INFO] loss :::  0.03151244670152664,  score: 0.0, lr: (1e-05, 1e-05) 
+[2024-06-21 15:45:29,627 INFO] agent_likelihood:-5.599483489990234, augmented_likelihood: -5.576488971710205,   prior_likelihood:-5.576488971710205 
+[2024-06-21 15:45:29,650 INFO] Step 20;Fraction valid SMILES: 100.0
+[2024-06-21 15:45:29,650 INFO] samples:
+[2024-06-21 15:46:05,963 INFO] Step ------ 40;
+[2024-06-21 15:46:05,965 INFO] loss :::  0.040967393666505814,  score: 0.0, lr: (1e-05, 1e-05) 
+[2024-06-21 15:46:05,967 INFO] agent_likelihood:-4.813835144042969, augmented_likelihood: -4.8062615394592285,   prior_likelihood:-4.8062615394592285 
+[2024-06-21 15:46:05,993 INFO] Step 40;Fraction valid SMILES: 100.0
+[2024-06-21 15:46:05,993 INFO] samples:
+[2024-06-21 15:46:41,880 INFO] Step ------ 60;
+[2024-06-21 15:46:41,882 INFO] loss :::  0.027872275561094284,  score: 0.0, lr: (1e-05, 1e-05) 
+[2024-06-21 15:46:41,883 INFO] agent_likelihood:-4.047679424285889, augmented_likelihood: -4.0713934898376465,   prior_likelihood:-4.0713934898376465 
+[2024-06-21 15:46:41,910 INFO] Step 60;Fraction valid SMILES: 100.0
+[2024-06-21 15:46:41,910 INFO] samples:
+[2024-06-21 15:47:17,827 INFO] Step ------ 80;
+[2024-06-21 15:47:17,831 INFO] loss :::  0.014116041362285614,  score: 0.0, lr: (1e-05, 1e-05) 
+[2024-06-21 15:47:17,833 INFO] agent_likelihood:-4.889767169952393, augmented_likelihood: -4.9079155921936035,   prior_likelihood:-4.9079155921936035 
+[2024-06-21 15:47:17,858 INFO] Step 80;Fraction valid SMILES: 100.0
+[2024-06-21 15:47:17,858 INFO] samples:
+[2024-06-21 15:47:53,805 INFO] Step ------ 100;
+[2024-06-21 15:47:53,806 INFO] loss :::  0.018111901357769966,  score: 0.0, lr: (1e-05, 1e-05) 
+[2024-06-21 15:47:53,807 INFO] agent_likelihood:-5.617473125457764, augmented_likelihood: -5.643847465515137,   prior_likelihood:-5.643847465515137 
+[2024-06-21 15:47:53,830 INFO] Step 100;Fraction valid SMILES: 100.0
+[2024-06-21 15:47:53,830 INFO] samples:
+[2024-06-21 15:48:29,518 INFO] Step ------ 120;
+[2024-06-21 15:48:29,521 INFO] loss :::  0.01504012756049633,  score: 0.0, lr: (1e-05, 1e-05) 
+[2024-06-21 15:48:29,523 INFO] agent_likelihood:-5.0994343757629395, augmented_likelihood: -5.112244129180908,   prior_likelihood:-5.112244129180908 
+[2024-06-21 15:48:29,548 INFO] Step 120;Fraction valid SMILES: 100.0
+[2024-06-21 15:48:29,548 INFO] samples:
+[2024-06-21 15:49:04,857 INFO] Step ------ 140;
+[2024-06-21 15:49:04,861 INFO] loss :::  0.02518600970506668,  score: 0.0, lr: (1e-05, 1e-05) 
+[2024-06-21 15:49:04,864 INFO] agent_likelihood:-4.380270004272461, augmented_likelihood: -4.437338829040527,   prior_likelihood:-4.437338829040527 
+[2024-06-21 15:49:04,892 INFO] Step 140;Fraction valid SMILES: 100.0
+[2024-06-21 15:49:04,892 INFO] samples:
