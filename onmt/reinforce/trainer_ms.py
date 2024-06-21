@@ -416,20 +416,22 @@ class RL_ms_Trainer(object):
                     info(
                         f"Step {cur_step};Fraction valid SMILES: {self.fraction_valid_smiles(smiles_sequences) * 100:4.1f}")
                     info('samples:')
-                    for i in range(opt.n_best):
-                        info(smiles_sequences_standard[i])
-
+                    """
+		    for i in range(opt.n_best):
+                        info(smiles_sequences_standard[i]
                     del smiles_sequences
                     del smiles_sequences_standard
+                    """
                     gc.collect()
 
+                """
                 if cur_step % 50 == 0:
                     experience.print_memory()
-
+                """
                 del enc_states,memory_bank,dec_states,alive_seq,\
                     dec_out, attn,agent_target,agent_scores,\
                     prior_enc_final, prior_memory_bank,prior_outputs, prior_states, prior_attns,\
-                    weights
+                    # weights
                 gc.collect()
 
                 self.model_saver.maybe_save(cur_step)
