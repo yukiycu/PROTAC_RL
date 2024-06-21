@@ -1,17 +1,30 @@
+#!/bin/bash
+
+#SBATCH -p gnode02
+#SBATCH -n 1
+#SBATCH -J PROTAC-RL
+#SBATCH -o log/stout.%J
+#SBATCH --gres=gpu:1
+
+module load slurm cuda/11.8
+
+start_time=`date "+%Y-%m-%d %H:%M:%S"`
+export CUDA_VISIBLE_DEVICES=0
+
 dataset_name=PROTAC
 ZINC_step=300000
 # step of pre-training model for initial fine-tuning model
 protac_step=7000
 # fine-tuning step
-random=random
+random=canonical
 model=SyntaLinker_prior_step
 pathsave=checkpoints/${dataset_name}/${random}/
 if [ ! -d "$pathsave"]; then
   mkdir $pathsave
 fi
-mkdir $pathsave
-CUDA_VISIBLE_DEVICES=3 python  train.py -data data/${dataset_name}/${random}/ \
-                 -train_from checkpoints/ZINC500/${random}/${model}_${ZINC_step}.pt \
+# mkdir $pathsave
+CUDA_VISIBLE_DEVICES=0 python  train.py -data data/${dataset_name}/${random}/ \
+                 -train_from checkpoints/ZINC/${random}/${model}_${ZINC_step}.pt \
                  -save_model checkpoints/${dataset_name}/${random}/SyntaLinker_zinc${ZINC_step}_protac -world_size 1 \
 		             -valid_steps 1000 -seed 42 -gpu_ranks 0 -save_checkpoint_steps 1000 -keep_checkpoint 50 \
                  -train_steps ${protac_step}  -param_init 0  -param_init_glorot -max_generator_batches 96 \
@@ -22,3 +35,8 @@ CUDA_VISIBLE_DEVICES=3 python  train.py -data data/${dataset_name}/${random}/ \
                  -dropout 0.1 -position_encoding -share_embeddings \
                  -global_attention general -global_attention_function softmax -self_attn_type scaled-dot \
                  -heads 8 -transformer_ff 2048
+
+end_time=`date "+%Y-%m-%d %H:%M:%S"`
+
+echo "start" $start_time
+echo "end" $end_time
